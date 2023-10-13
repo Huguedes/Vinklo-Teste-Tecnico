@@ -1,0 +1,42 @@
+<%= form_with(model: user) do |form| %>
+  <% if user.errors.any? %>
+    <div style="color: red">
+
+      <ul class="erro">
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="wrapper">
+    <div>
+      <%= form.label :name, style: "display: block" %>
+      <%= form.text_field :name, class:"form-control" %>
+    </div>
+
+    <div>
+      <%= form.label :email, style: "display: block" %>
+      <%= form.text_field :email, class:"form-control" %>
+    </div>
+
+    <div>
+      <%= form.label :phone, style: "display: block" %>
+      <%= form.text_field :phone, class:"form-control" %>
+    </div>
+
+    <div>
+      <%= form.label :cpf, style: "display: block" %>
+      <%= form.text_field :cpf, class:"form-control" %>
+    </div>
+
+    <div>
+      <%= form.submit %>
+    </div>
+  </div>
+  <div>
+    <%= link_to "Back to users", users_path, class:"btn-two btn-back"%>
+  </div>
+  
+<% end %>

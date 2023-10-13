@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DemoFestalab</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+    <%= stylesheet_link_tag "main.css" %>
+
+  </head>
+
+  <body>
+  <nav class="navbar navbar-dark bg-dark py-3 px-4">
+    <%= image_tag 'logo.png', class:"logo"%>
+  </nav>
+  <div class="container">
+    <%= yield %>
+  </div>
+</body>
+</html>
