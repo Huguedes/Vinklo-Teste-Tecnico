@@ -1,24 +1,26 @@
-# README
+# Teste Técnico Vinklo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p>O teste tem como objetivo validar os formulários.</p>
 
-Things you may want to cover:
+## Requisitos:
 
-* Ruby version
+Ruby on Rails 7.0.2.3;
+Ruby 3.0.0;
+npm 8.5.0;
+node 16.14.2
+yarn 1.22.18
 
-* System dependencies
+🚀 Instalando
+clone o repositório do projeto
+$ git clone (https://github.com/Huguedes/demo_festalab.git)
 
-* Configuration
+instale as dependências
+$ bundle
 
-* Database creation
+instancie a base de dados
+$ rails db:migrate
 
-* Database initialization
+inicie o servidor
+$ ruby bin/rails server
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+abra (http://localhost:3000/) no browser
