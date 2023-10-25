@@ -7,3 +7,4 @@
  *= require_self
  */
 //= link main.css
+//= link application.css
