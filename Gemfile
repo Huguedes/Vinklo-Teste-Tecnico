@@ -2,6 +2,10 @@ source "https://rubygems.org"
 
 ruby "3.1.4"
 
+gem 'bootstrap', '~> 4.3.1'
+
+gem 'jquery-rails'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.1"
 
